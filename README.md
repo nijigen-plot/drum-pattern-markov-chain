@@ -52,11 +52,11 @@
 ## MIDIデータ作成時の注意
 同時押しが発生する場合、互いのノードの長さをどちらか一番短いノードに合わせる必要があります。
 
-【Before】
-![](https://user-images.githubusercontent.com/65853436/184065632-ce047002-11a7-4a0e-bb92-82bab6079082.png)
+【Before】<br>
+<img src="https://user-images.githubusercontent.com/65853436/184065632-ce047002-11a7-4a0e-bb92-82bab6079082.png" width="600">
 
-【After】
-![](https://user-images.githubusercontent.com/65853436/184065682-e8578b0f-a71d-41c3-a643-adbef95e2ac6.png)
+【After】<br>
+<img src="https://user-images.githubusercontent.com/65853436/184065682-e8578b0f-a71d-41c3-a643-adbef95e2ac6.png" width="600">
 
 
 # 実行環境
