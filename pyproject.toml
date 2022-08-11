@@ -17,6 +17,17 @@ pyproject-flake8 = "^0.0.1-alpha.5"
 
 [tool.poetry.dev-dependencies]
 
+[tool.black]
+line-length = 119
+
+[tool.flake8]
+max-line-length = 119
+extend-ignore = "E203"
+exclude = ".venv"
+
+[tool.isort]
+profile = "black"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
