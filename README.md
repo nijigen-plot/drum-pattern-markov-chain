@@ -1,6 +1,6 @@
 # drum-pattern-markov-chain
 ドラムパターンMIDIファイルからマルコフ連鎖を活用して新たなドラムパターンを作ります<br>
-[この動画](https://www.youtube.com/watch?v=nUJiKVWmrdk)で用いたソースコード]です。
+[この動画](https://www.youtube.com/watch?v=nUJiKVWmrdk)で用いたソースコードです。
 
 
 # ドラムパターン⇔MIDI対応表
