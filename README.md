@@ -1,0 +1,2 @@
+# drum_pattern_markov_chain
+ドラムパターンMIDIファイルからマルコフ連鎖を活用して新たなドラムパターンを作ります
