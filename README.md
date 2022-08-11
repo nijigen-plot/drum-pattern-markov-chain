@@ -2,6 +2,33 @@
 ドラムパターンMIDIファイルからマルコフ連鎖を活用して新たなドラムパターンを作ります<br>
 [この動画](https://www.youtube.com/watch?v=nUJiKVWmrdk)で用いたソースコードです。
 
+## 実行例
+[exsample.ipynb](https://github.com/nijigen-plot/drum-pattern-markov-chain/blob/main/example.ipynb)に一連の流れを記載しています。
+
+### MIDIファイルを文字列化
+
+```python
+from glob import glob
+from drum_midi_translator import MidiToText
+from mido import MidiFile
+
+# 読み込み対象のMIDIファイルを読み込む
+target_midi_directory = glob('example_midi_file/*.mid')
+target_midi_data = [MidiFile(f) for f in target_midi_directory]
+
+# MIDIファイルを文字列化
+MTT = MidiToText()
+translate_texts = [MTT.transform(tmd, separate_time=240) for tmd in target_midi_data]
+```
+
+### 文字列をMIDIファイル化→保存
+
+```python
+from drum_midi_translator import TextToMidi
+sample = "C4h D8h_D8m C4h D4h"
+TTM = TextToMidi()
+TTM.save_transform(sample, f'./export_markov_chain_midi_file/xxxx.mid')
+```
 
 # ドラムパターン⇔MIDI対応表
 ドラムパターンをMIDIに変換する際は以下表の通りに作成してください。
@@ -62,7 +89,7 @@
 # 実行環境
 [poetry](https://github.com/python-poetry/poetry)を用いて環境を用意しています。
 
-```
+```sh
 git clone git@github.com:nijigen-plot/drum-pattern-markov-chain.git
 poetry install
 ```
