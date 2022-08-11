@@ -45,7 +45,7 @@
 | 区切り部分 | ドラムパターンの文字列が同時押しせず次につながり、かつマルコフ連鎖の区切り単位に該当する場合間に用いる | " " |
 
 ## 変換例
-以下のように打ち込んだMIDIファイルは、区切り間隔が`separate_time=480`設定の場合`C4h D8h_D8m C4h D4h`となります。
+以下のように打ち込んだMIDIファイルは、[区切り間隔](https://github.com/nijigen-plot/drum-pattern-markov-chain/blob/main/drum_midi_translator.py#L239-L240)が`separate_time=480`設定の場合`C4h D8h_D8m C4h D4h`となります。
 
 ![](https://user-images.githubusercontent.com/65853436/184064986-32e34a2e-862a-4825-81f6-3629e383c2da.png)
 
